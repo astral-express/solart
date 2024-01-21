@@ -26,7 +26,7 @@ export function SignUp() {
   return (
     <form action="/register" autoComplete="off" className="flex flex-col sm:flex-row">
       <input
-        className="h-10 rounded sm:rounded-r-none sm:rounded-r-md border border-indigo-700 py-[9px] pl-4 text-black outline-2 placeholder:text-gray-500"
+        className="h-10 rounded sm:rounded-r-none border border-indigo-700 py-[9px] text-center sm:text-left sm:pl-4 text-black outline-2 placeholder:text-gray-500"
         id="email"
         type="email"
         name="email"
