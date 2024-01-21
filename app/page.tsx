@@ -33,7 +33,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center align-baseline pt-8">
             <SignUp />
-            <div className="border-t md:border-l border-white px-48 my-4 md:my-0 md:h-10 md:px-0 md:mx-4"></div>
+            <div className="border-t md:border-l border-white px-40 sm:px-48 my-4 md:my-0 md:h-10 md:px-0 md:mx-4"></div>
             <Dashboard />
           </div>
         </div>
