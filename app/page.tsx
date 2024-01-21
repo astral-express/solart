@@ -9,7 +9,7 @@ export default function Home() {
     <main className="flex flex-col min-h-screen">
       <IndexNavBar />
       <div className="flex justify-center my-auto">
-        <div className="flex flex-col justify-center items-center pr-1 pl-5">
+        <div className="hidden sm:flex flex-col justify-center items-center pr-1 pl-5">
           <div className="solart-circle">
             <RotatingSunIcon />
           </div>
