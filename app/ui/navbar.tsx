@@ -22,7 +22,7 @@ export function IndexNavBar() {
     <nav className="flex justify-between shrink-0 align-middle gap-6 border-b border-indigo-700 p-2 px-4">
       <div className="navbar_logo">
         <Image
-          src="/saturn_fjstudio_white_32x32.png"
+          src="/saturn_fjstudio_white_512x512.png"
           width={32}
           height={32}
           alt="Galaxy - Icon by Freepik"

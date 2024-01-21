@@ -20,7 +20,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center items-center px-5">
           <Image
-            src="/saturn_fjstudio_white_128x128.png"
+            src="/saturn_fjstudio_white_512x512.png"
             width={128}
             height={128}
             alt="Galaxy - Icon by Freepik"
