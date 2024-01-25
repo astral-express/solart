@@ -1,10 +1,10 @@
 import Image from "next/image";
 import { RotatingSunIcon } from "./ui/motion";
 import { IconInputCursorMove } from "./ui/react-svg";
-import { SignUp, Dashboard } from "./ui/actions";
+import Link from "next/link";
 import { IndexNavBar } from "./ui/navbar";
 
-export default function Home() {
+export default async function Home() {
   return (
     <main className="flex flex-col min-h-screen">
       <IndexNavBar />
@@ -32,9 +32,32 @@ export default function Home() {
             express your own world and story with your own hand strokes.
           </p>
           <div className="flex flex-col md:flex-row justify-center items-center align-baseline pt-8">
-            <SignUp />
+            <form
+              action="/register"
+              autoComplete="off"
+              className="flex flex-col sm:flex-row"
+            >
+              <input
+                className="h-10 rounded sm:rounded-r-none border border-indigo-700 py-[9px] text-center sm:text-left sm:pl-4 text-black outline-2 placeholder:text-gray-500"
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email address"
+                accept="UTF-8"
+                formMethod="post"
+                required
+              />
+              <button className="h-10 rounded sm:rounded-l-none bg-indigo-700 px-4 font-medium text-white transition-colors hover:bg-indigo-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-700 mt-2 sm:mt-0">
+                <span>Sign up to Solart</span>
+              </button>
+            </form>
             <div className="border-t md:border-l border-white px-[8rem] sm:px-48 my-4 md:my-0 md:h-10 md:px-0 md:mx-4"></div>
-            <Dashboard />
+            <Link
+              href="/dashboard"
+              className="flex items-center h-10 rounded bg-indigo-700 px-4 font-medium text-white transition-colors hover:bg-indigo-500 focus-visible:outline focus-visible:outline-offset-2 focus-visible:outline-indigo-700"
+            >
+              <span>Browse dashboard anonymously</span>
+            </Link>
           </div>
         </div>
       </div>

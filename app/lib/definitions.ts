@@ -1,0 +1,15 @@
+export type User = {
+    id: string,
+    rank_id: string,
+    type_id: string,
+    status_id: string,
+    username: string,
+    email: string,
+    password: string,
+    full_name: string,
+    avatar: string,
+    description: string,
+    created_at: Date,
+    edited_at?: Date,
+    deleted_at?: Date,
+}
